@@ -1,4 +1,4 @@
-#LED Control via CAN Bus Nodes
+# LED Control via CAN Bus Nodes
 
 **Description:**
 This project showcases a fundamental implementation of CAN Bus communication between STM32F407G-DISC1 nodes and a central gateway, facilitating control of the internal LEDs on the STM32 boards based on user input.
