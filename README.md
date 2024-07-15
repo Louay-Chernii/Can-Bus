@@ -37,14 +37,21 @@ The code utilizes STM32 HAL libraries to control GPIO and CAN peripherals. Hereâ
 ***1-Initialization:***
 
 -The system clock, GPIO, and CAN1 are initialized.
+
 -CAN filter settings are configured to accept all messages.
+
 -CAN communication and notifications for incoming messages are activated.
+
 ***2-Main Loop:***
 
 -The program waits for the user button press.
+
 -On button press, all LEDs on the board are turned off.
+
 -A CAN message with the board ID is transmitted.
+
 ***3-CAN Receive Callback:***
 
 -When a CAN message is received, the callback function processes it.
+
 -If the message ID matches the expected value, the received data determines which LEDs to light up on the board.
